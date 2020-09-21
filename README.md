@@ -19,3 +19,5 @@ Kontakta oss (Ali)
 
 Font: Trebuchet MS, sans-serif
 Font-size: Heading: 24px Text: 16px;
+Blue color: #131E3A
+Gold Color: #e1ad21
