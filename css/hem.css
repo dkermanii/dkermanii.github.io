@@ -2,7 +2,8 @@
   display: grid;
   background: url(/pic/lawbg.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  width: 100%;
   grid-area: landing;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(8, auto);
