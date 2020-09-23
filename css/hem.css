@@ -8,29 +8,24 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(8, 1fr);
     gap: 1px 1px;
-    grid-template-areas:
-    ". . . "
-    ". . ."
-    ". center ."
-    ". slogan . "
-    ". . ."
-    ". . ."
-    ". . ."
-    ". . . ";
+
+
   }
 
-  .centername, .slogan {
-      display: grid;
-      grid-area: center;
+  .centername { 
+      position: absolute;
+      top: 350px;
+      left: 650px;
       color: white;
-      justify-content: center;
-      align-content: center;
       font-family: 'Times New Roman', Times, serif;
       font-size: 50px;
-      grid-auto-flow: column;
   }
 
   .slogan {
-      font-size: 20px;
-      grid-area: slogan;
+    position: absolute;
+    top: 450px;
+    left: 850px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
   }
