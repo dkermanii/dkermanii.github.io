@@ -1,19 +1,101 @@
 .grid-container {
+    background: url(/pic/gray.jpg);
+    background-size: cover;
     width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.6fr 1.4fr repeat(9, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 0.6fr 1.4fr repeat(10, 1fr);
     grid-template-areas:
-      "navbar navbar navbar navbar"
-      "landing landing landing landing"
-      "landing landing landing landing"
-      "landing landing landing landing"
-      "landing landing landing landing"
-      "landing landing landing landing"
-      "landing landing landing landing"
-      "landing landing landing landing"
-      "landing landing landing landing"
-      "footer footer footer footer"
-      "footer footer footer footer";
+      "navbar navbar navbar navbar navbar navbar navbar"
+      ". . titel titel titel . ."
+      ". dani . alex . ali ."
+      ". danipic . alexpic . alipic ."
+      ". danipic . alexpic . alipic ."
+      ". dsmall . asmall . alismall ."
+      ". daninfo . alexinfo . alinfo ."
+      ". daninfo . alexinfo . alinfo ."
+      ". . . . . . ."
+      "footer footer footer footer footer footer footer"
+      "footer footer footer footer footer footer footer"; 
   }
+
+  .daniyal, .alex, .ali {
+    align-self: center;
+    justify-self: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: var(--main-main-color);
+  }
+
+  .daninfo, .alexinfo, .alinfo {
+
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 16px;
+      
+  }
+
+  .danipic, .alexpic, .alipic {
+    box-shadow: 0 9px 18px 0 rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    transition: 5.0s;
+    background-color: white;
+  }
+
+
+.titel {
+    grid-area: titel; 
+    align-self: center;
+    justify-self: center;
+    font-size: 52px;
+    color: var(--main-main-color);  
+}
+
+.daniyal {
+display: grid;
+grid-area: dani;
+}
+
+.danipic { grid-area: danipic; 
+
+}
+
+.daninfo {
+    grid-area: daninfo;
+}
+
+.danismallsection {
+    grid-area: dsmall;
+}
+
+.alex { 
+    grid-area: alex; 
+}
+
+.alexpic {
+    grid-area: alexpic;
+}
+
+.alexinfo {
+    grid-area: alexinfo;
+}
+
+.alexsmallsection {
+    grid-area: asmall;
+}
+
+.ali { 
+    grid-area: ali; 
+}
+
+.alipic {
+    grid-area: alipic;
+}
+
+.alinfo {
+    grid-area: alinfo;
+}
+
+.alismallsection {
+    grid-area: alismall;
+}
