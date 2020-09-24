@@ -1,64 +1,78 @@
 .grid-container {
-    background: url(/pic/gray.jpg);
+    background: url(/pic/newlaw.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 0.6fr 1.4fr repeat(10, 1fr);
+    grid-template-rows: 0.6fr 1.4fr repeat(11, 1fr);
     grid-template-areas:
       "navbar navbar navbar navbar navbar navbar navbar"
       ". . titel titel titel . ."
       ". dani . alex . ali ."
       ". danipic . alexpic . alipic ."
       ". danipic . alexpic . alipic ."
+      ". danipic . alexpic . alipic ."
       ". dsmall . asmall . alismall ."
       ". daninfo . alexinfo . alinfo ."
       ". daninfo . alexinfo . alinfo ."
-      ". . . . . . ."
+      ". daninfo . alexinfo . alinfo ."
       "footer footer footer footer footer footer footer"
       "footer footer footer footer footer footer footer"; 
   }
 
   .daniyal, .alex, .ali {
     align-self: center;
-    justify-self: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 24px;
     color: var(--main-main-color);
   }
 
   .daninfo, .alexinfo, .alinfo {
-
+      
       font-family: 'Times New Roman', Times, serif;
       font-size: 16px;
-      
+  }
+
+
+  .daninfo p, .alexinfo p, .alinfo p{
+      font-weight: bold;
+      border-bottom: 1px solid var(--main-secondary-color);
+
   }
 
   .danipic, .alexpic, .alipic {
+
     box-shadow: 0 9px 18px 0 rgba(0,0,0,0.2);
     margin-bottom: 20px;
     transition: 5.0s;
     background-color: white;
   }
 
+.danismallsection h4, .alexsmallsection h4, .alismallsection h4{
+    border-bottom: 1px solid var(--main-secondary-color);
+}
+
 
 .titel {
     grid-area: titel; 
     align-self: center;
     justify-self: center;
-    font-size: 52px;
-    color: var(--main-main-color);  
+    font-size: 40px;
+    color: var(--main-main-color); 
 }
 
 .daniyal {
-display: grid;
 grid-area: dani;
+border-bottom: 1px solid var(--main-secondary-color);
 }
 
-.danipic { grid-area: danipic; 
-
+.danipic { 
+    grid-area: danipic; 
+    object-fit: cont;
 }
+
 
 .daninfo {
     grid-area: daninfo;
@@ -70,6 +84,7 @@ grid-area: dani;
 
 .alex { 
     grid-area: alex; 
+    border-bottom: 1px solid var(--main-secondary-color);
 }
 
 .alexpic {
@@ -86,6 +101,7 @@ grid-area: dani;
 
 .ali { 
     grid-area: ali; 
+    border-bottom: 1px solid var(--main-secondary-color);
 }
 
 .alipic {
@@ -98,4 +114,11 @@ grid-area: dani;
 
 .alismallsection {
     grid-area: alismall;
+}
+
+.fab {
+    color: goldenrod;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-left: 5%;
 }
