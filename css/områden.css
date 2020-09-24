@@ -1,19 +1,47 @@
 .grid-container {
     width: 100%;
     margin: 0 auto;
+    background: url(https://media.istockphoto.com/photos/monochrome-texture-with-white-and-gray-color-picture-id1138782666?k=6&m=1138782666&s=612x612&w=0&h=yxW7wRHOVZ5eA3aCnfNq3c5vorKgo2zmNuoIK0DFiao=);
+    background-size: cover;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 0.6fr 1.4fr repeat(9, 1fr);
     grid-template-areas:
       "navbar navbar navbar navbar"
-      "landing landing landing landing"
-      "landing landing landing landing"
-      "landing landing landing landing"
-      "landing landing landing landing"
-      "landing landing landing landing"
-      "landing landing landing landing"
-      "landing landing landing landing"
-      "landing landing landing landing"
+      ". . . ."
+      ". cards cards ."
+      ". cards cards ."
+      ". cards cards ."
+      ". cards cards ."
+      ". cards cards ."
       "footer footer footer footer"
       "footer footer footer footer";
+  }
+  .cards {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-area: cards;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "card1 card2"
+    "card3 card4";
+  }
+  .card1 {
+    grid-area: card1;
+    border: 1px solid black;
+  }
+  .card2 {
+    grid-area: card2;
+    border: 1px solid black;
+  }
+  .card3 {
+    grid-area: card3;
+    border: 1px solid black;
+  }
+  .card4 {
+    grid-area: card4;
+    border: 1px solid black;
   }
