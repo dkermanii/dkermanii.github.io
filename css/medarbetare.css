@@ -16,14 +16,16 @@
       ". danipic . alexpic . alipic ."
       ". dsmall . asmall . alismall ."
       ". daninfo . alexinfo . alinfo ."
-      ". daninfo . alexinfo . alinfo ."
-      ". daninfo . alexinfo . alinfo ."
+      ". . . . . . . "
+      ". danikontakt . alexkontakt . alikontakt ."
+      ". danikontakt . alexkontakt . alikontakt ."
       "footer footer footer footer footer footer footer"
       "footer footer footer footer footer footer footer"; 
   }
 
   .daniyal, .alex, .ali {
     align-self: center;
+    text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 24px;
     color: var(--main-main-color);
@@ -43,11 +45,15 @@
   }
 
   .danipic, .alexpic, .alipic {
-
     box-shadow: 0 9px 18px 0 rgba(0,0,0,0.2);
     margin-bottom: 20px;
     transition: 5.0s;
     background-color: white;
+    width: max-content;
+    height: max-content;
+    width: 280px;
+    height:360px;
+    
   }
 
 .danismallsection h4, .alexsmallsection h4, .alismallsection h4{
@@ -59,7 +65,6 @@
     grid-area: titel; 
     align-self: center;
     justify-self: center;
-    font-size: 40px;
     color: var(--main-main-color); 
 }
 
@@ -70,8 +75,9 @@ border-bottom: 1px solid var(--main-secondary-color);
 
 .danipic { 
     grid-area: danipic; 
-    object-fit: cont;
+
 }
+
 
 
 .daninfo {
@@ -120,5 +126,77 @@ border-bottom: 1px solid var(--main-secondary-color);
     color: goldenrod;
     font-size: 20px;
     margin-bottom: 15px;
-    margin-left: 5%;
 }
+
+.danikontakt {
+    grid-area: danikontakt;
+}
+
+.alexkontakt {
+    grid-area: alexkontakt;
+}
+
+.alikontakt {
+    grid-area: alikontakt;
+}
+
+@media screen and (max-width: 1200px) {
+    .grid-container {
+		grid-template-columns: repeat(7, 1fr);
+		grid-template-rows: 0.6fr 1.4fr repeat(7, minmax(7em, auto));
+        grid-template-areas: 
+        "navbar navbar navbar navbar navbar navbar"
+        ". .  titel titel titel . ."
+        ". dani . alex . ali ."
+        ". danipic . alexpic . alipic ."
+        ". dsmall . asmall . alismall ."
+        ". daninfo . alexinfo . alinfo ."
+        ". danikontakt . alexkontakt . alikontakt ."
+        "footer footer footer footer footer footer footer";
+
+        }
+        .danipic, .alexpic, .alipic { 
+            box-shadow: 0 9px 18px 0 rgba(0,0,0,0.2);
+            margin-bottom: 1px;
+            transition: 5.0s;
+            background-color: white;
+            width: 250px;
+            height:320px;
+ }
+}
+
+                
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        background: white;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 0.1fr 1.4fr repeat(21, minmax(1em, auto));
+        grid-template-areas: 
+        "navbar navbar navbar navbar navbar"
+        ". titel titel titel ."
+
+        ". dani dani dani ."
+        ". . . . ."
+        ". . danipic . ."
+        ". . dsmall . ."
+        ". . daninfo . ."
+        ". .danikontakt . ."
+
+        ". alex alex alex ."
+        ". . . . ."
+        ". . alexpic . ."
+        ". . asmall . ."
+        ". . alexinfo . ."
+        ". . alexkontakt . ."
+
+        ". ali ali ali ."
+        ". . . . ."
+        ". . alipic . ."
+        ". . alismall . ."
+        ". . alinfo . ."
+        ". . alikontakt . ."
+
+        "footer footer footer footer footer";
+        }
+    }
