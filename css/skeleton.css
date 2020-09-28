@@ -71,6 +71,12 @@
   color: var(--main-secondary-color);
   font-size: 16px;
 }
+.navigation a:hover {
+  color: white;
+}
+.navigation a.active {
+  color: white;
+}
 .logo {
   display: grid;
   grid-auto-flow: column;
@@ -138,7 +144,8 @@
   margin-bottom: 20px;
 }
 
-.footer-section4 > p {
+.footer-section4 i {
   margin-bottom: 5px;
   padding-bottom: 10px;
+  color: var(--main-secondary-color)
 }

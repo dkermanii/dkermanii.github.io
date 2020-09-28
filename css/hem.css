@@ -1,14 +1,22 @@
 .landing {
-    display: grid;
-    background: url(/pic/lawbg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    grid-area: landing;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(8, auto);
-    gap: 1px 1px;
-    grid-template-areas: ". . ." "center center center" "slogan slogan slogan" ". . ." ". . ." ". . ." ". . ." ". . .";
+  display: grid;
+  background: url(/pic/lawbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  grid-area: landing;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(8, auto);
+  gap: 1px 1px;
+  grid-template-areas:
+  ". . ."
+  "center center center"
+  "slogan slogan slogan"
+  ". . ."
+  ". . ."
+  ". . ."
+  ". . ."
+  ". . .";
 }
 
 .grid-container {
