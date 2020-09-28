@@ -33,7 +33,7 @@
 
   .daninfo, .alexinfo, .alinfo {
       
-      font-family: 'Times New Roman', Times, serif;
+      font-family: 'Times New Roman'    , Times, serif;
       font-size: 16px;
   }
 
@@ -140,7 +140,7 @@ border-bottom: 1px solid var(--main-secondary-color);
     grid-area: alikontakt;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
     .grid-container {
 		grid-template-columns: repeat(7, 1fr);
 		grid-template-rows: 0.6fr 1.4fr repeat(7, minmax(7em, auto));
@@ -167,7 +167,7 @@ border-bottom: 1px solid var(--main-secondary-color);
 
                 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .grid-container {
         background: white;
         grid-template-columns: repeat(5, 1fr);
@@ -198,5 +198,18 @@ border-bottom: 1px solid var(--main-secondary-color);
         ". . alikontakt . ."
 
         "footer footer footer footer footer";
+        }
+
+        .logo img {
+            width: 200%;
+        }
+
+        .footer {
+
+            font-size: smaller;
+        }
+
+        .navigation {
+            font-size: smaller;
         }
     }
