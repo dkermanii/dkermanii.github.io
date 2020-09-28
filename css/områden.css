@@ -210,7 +210,7 @@ input[type="checkbox"] {
       margin-left: 0px;
     }
   }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .grid-container {
         width: 100%;
         margin: 0 auto;
