@@ -162,7 +162,15 @@ border-bottom: 1px solid var(--main-secondary-color);
             background-color: white;
             width: 250px;
             height:320px;
- }
+    }
+    .footer {
+        text-align: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "footer-section1 footer-section2"
+        "footer-section3 footer-section4";
+    }
 }
 
                 
@@ -171,7 +179,7 @@ border-bottom: 1px solid var(--main-secondary-color);
     .grid-container {
         background: white;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: 0.1fr 1.4fr repeat(21, minmax(1em, auto));
+        grid-template-rows: 0.1fr 1.4fr repeat(22, minmax(1em, auto));
         grid-template-areas: 
         "navbar navbar navbar navbar navbar"
         ". titel titel titel ."
@@ -197,6 +205,7 @@ border-bottom: 1px solid var(--main-secondary-color);
         ". . alinfo . ."
         ". . alikontakt . ."
 
+        "footer footer footer footer footer"
         "footer footer footer footer footer";
         }
 
@@ -211,5 +220,17 @@ border-bottom: 1px solid var(--main-secondary-color);
 
         .navigation {
             font-size: smaller;
-        }
+    }   
+
+    .footer {
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "footer-section1"
+        "footer-section2"
+        "footer-section3"
+        "footer-section4";
     }
+
+}

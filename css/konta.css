@@ -1,4 +1,4 @@
-                                                                                                   :root {
+                                                                                                :root {
                                                                                                       --main-main-color: #131e3a;
                                                                                                       --main-secondary-color: #e1ad21;
                                                                                                       --main-white-color: #fff;
@@ -357,3 +357,4 @@
                                                                                                           grid-area: footer-section4;
                                                                                                       }
                                                                                                   }
+
