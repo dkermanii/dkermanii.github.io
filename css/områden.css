@@ -2,11 +2,66 @@
   grid-area: heading;
   text-align: center;
   justify-self: center;
-  font-size: 26px;
   font-weight: normal;
   color: var(--main-main-color);
   text-transform: uppercase;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 80px;
+  background: #131e3a;
+}
+
+nav img {
+  width: 100%;
+  position: inline-block;
+  top: 17px;
+  left: 0;
+}
+
+nav ul {
+  grid-column: 3;
+  margin-right: 25px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #e1ad21;
+  position: relative;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav .menu-btn i {
+  color: #e1ad21;
+  font-size: 22px;
+  line-height: 80px;
+  margin-right: 20px;
+  float: right;
+  cursor: pointer;
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
 .grid-container {
   width: 100%;
   margin: 0 auto;
@@ -15,9 +70,9 @@
   background-repeat: no-repeat;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 0.6fr 1.4fr repeat(9, 1fr);
+  grid-template-rows: 0.6fr 1.4fr repeat(6, minmax(7em, auto));
   grid-template-areas:
-    "navbar navbar navbar navbar"
+    "nav nav nav nav"
     ". heading heading ."
     ". cards cards ."
     ". cards cards ."
@@ -100,4 +155,113 @@
   line-height: 1.7;
   color: darkgray;
   margin-bottom: 2.5rem;
+}
+
+@media screen and (max-width: 1199px) {
+  .grid-container {
+    width: 100%;
+    margin: 0 auto;
+    background: url(/pic/gradient.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 0.6fr 1.4fr repeat(7, minmax(7em, auto));
+    grid-template-areas:
+      "navbar navbar navbar navbar navbar navbar navbar navbar"
+      ". . heading heading heading heading . ."
+      ". cards cards cards cards cards cards ."
+      ". cards cards cards cards cards cards ."
+      ". cards cards cards cards cards cards ."
+      ". cards cards cards cards cards cards ."
+      ". cards cards cards cards cards cards ."
+      "footer footer footer footer footer footer footer footer"
+      "footer footer footer footer footer footer footer footer";
+  }
+  @media(max-width:767px) {
+    nav .menu-btn i {
+        display: grid;
+    }
+    nav img {
+        width: 100%;
+        position: sticky;
+        top: 14px;
+        left: 0;
+        display: hidden;
+    }
+    nav ul {
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        background: #131e3a;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1/4;
+    }
+    #click:checked~ul {
+        left: 0;
+    }
+    nav ul li {
+        width: 100%;
+        margin: 20px 0;
+    }
+    #click:checked~ul li a {
+        margin-left: 0px;
+    }
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, minmax);
+    gap: 2%;
+    grid-template-areas:
+      "navbar navbar navbar navbar navbar"
+      "heading heading heading heading heading"
+      ".  cards cards cards ."
+      ".  cards cards cards ."
+      ".  cards cards cards ."
+      ".  cards cards cards ."
+      "footer footer footer footer footer"
+      "footer footer footer footer footer"
+      "footer footer footer footer footer"
+      "footer footer footer footer footer";
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "footer-section1"
+      "footer-section2"
+      "footer-section3"
+      "footer-section4";
+      grid-area: footer;
+      font-size: smaller;
+    }
+      
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3"
+      "card4";
+      grid-area: cards;
+  }
+  nav img {
+    width: 100%;
+  }
+  .card-header {
+    font-size: 16px;
+
+  }
 }
