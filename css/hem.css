@@ -17,45 +17,33 @@
   ". . ."
   ". . ."
   ". . .";
-
 }
+
 .grid-container {
-  width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 0.6fr 1.4fr repeat(9, 1fr);
-  grid-template-areas:
-    "navbar navbar navbar navbar"
-    "landing landing landing landing"
-    "landing landing landing landing"
-    "landing landing landing landing"
-    "landing landing landing landing"
-    "landing landing landing landing"
-    "landing landing landing landing"
-    "landing landing landing landing"
-    "landing landing landing landing"
-    "footer footer footer footer"
-    "footer footer footer footer";
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.6fr 1.4fr repeat(9, 1fr);
+    grid-template-areas: "navbar navbar navbar navbar" "landing landing landing landing" "landing landing landing landing" "landing landing landing landing" "landing landing landing landing" "landing landing landing landing" "landing landing landing landing" "landing landing landing landing" "landing landing landing landing" "footer footer footer footer" "footer footer footer footer";
 }
 
-.centername { 
-  display: grid;
-  align-content: center;
-  justify-content: center;
-  grid-area: center;
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 50px;
+.centername {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-area: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
 }
 
 .slogan {
-  display: grid;
-  align-content: flex-start;
-  justify-content: center;
-  grid-area: slogan;
-  color: white;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
+    display: grid;
+    align-content: flex-start;
+    justify-content: center;
+    grid-area: slogan;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
 }
-

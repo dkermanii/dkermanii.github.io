@@ -1,0 +1,321 @@
+                                                                                                                       :root {
+                                                                                                                          --main-main-color: #131e3a;
+                                                                                                                          --main-secondary-color: #e1ad21;
+                                                                                                                          --main-white-color: #fff;
+                                                                                                                          --main-font-size: 16px;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      * {
+                                                                                                                          margin: 0;
+                                                                                                                          padding: 0;
+                                                                                                                          box-sizing: border-box;
+                                                                                                                          font-family: 'Poppins', sans-serif;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      nav {
+                                                                                                                          display: grid;
+                                                                                                                          grid-template-columns: 1fr 1fr;
+                                                                                                                          align-items: center;
+                                                                                                                          height: 80px;
+                                                                                                                          background: #131e3a;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      nav img {
+                                                                                                                          width: 20%;
+                                                                                                                          position: absolute;
+                                                                                                                          top: 17px;
+                                                                                                                          left: 0;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      nav ul {
+                                                                                                                          grid-column: 3;
+                                                                                                                          margin-right: 25px;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      nav ul li {
+                                                                                                                          display: inline-block;
+                                                                                                                          line-height: 80px;
+                                                                                                                          margin: 0 10px;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      nav ul li a {
+                                                                                                                          color: #e1ad21;
+                                                                                                                          position: relative;
+                                                                                                                          font-size: 18px;
+                                                                                                                          text-decoration: none;
+                                                                                                                          text-transform: uppercase;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      nav .menu-btn i {
+                                                                                                                          color: #e1ad21;
+                                                                                                                          font-size: 22px;
+                                                                                                                          line-height: 80px;
+                                                                                                                          margin-right: 20px;
+                                                                                                                          float: right;
+                                                                                                                          cursor: pointer;
+                                                                                                                          display: none;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      input[type="checkbox"] {
+                                                                                                                          display: none;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      body {
+                                                                                                                          background-image: url(/pic/stockholm-center-1257702.jpg);
+                                                                                                                          background-repeat: no-repeat;
+                                                                                                                          background-size: cover;
+                                                                                                                          line-height: 1.6;
+                                                                                                                          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .container {
+                                                                                                                          max-width: 1170px;
+                                                                                                                          margin-left: auto;
+                                                                                                                          margin-right: auto;
+                                                                                                                          padding: 1em;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      ul {
+                                                                                                                          list-style: none;
+                                                                                                                          padding: 0;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .brand {
+                                                                                                                          text-align: center;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .brand span {
+                                                                                                                          color: rgb(248, 191, 4);
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .wrapper {
+                                                                                                                          box-shadow: 0 0 20px 0 rgba(236, 221, 4, 0.7);
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .wrapper>* {
+                                                                                                                          padding: 1em;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .company-info h3,
+                                                                                                                      .company-info ul {
+                                                                                                                          text-align: center;
+                                                                                                                          margin: 0 0 0 0;
+                                                                                                                      }
+                                                                                                                      /* FORM STYLES */
+                                                                                                                      
+                                                                                                                      .contact form {
+                                                                                                                          display: grid;
+                                                                                                                          grid-template-columns: 1fr 1fr;
+                                                                                                                          grid-gap: 20px;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .contact form label {
+                                                                                                                          display: block;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .contact form p {
+                                                                                                                          margin: 0;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .contact form button,
+                                                                                                                      .contact form input,
+                                                                                                                      .contact form textarea {
+                                                                                                                          width: 100%;
+                                                                                                                          padding: 1em;
+                                                                                                                          border: 1px solid #ecc30b;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .contact form button {
+                                                                                                                          background: #ecc30b;
+                                                                                                                          border: 0;
+                                                                                                                          text-transform: uppercase;
+                                                                                                                          margin-top: 50px;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .contact form button:hover {
+                                                                                                                          background-color: #131e3a;
+                                                                                                                          color: #fff;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .pmaps {
+                                                                                                                          box-sizing: content-box;
+                                                                                                                          display: block;
+                                                                                                                          position: relative;
+                                                                                                                          border: 0;
+                                                                                                                          width: 100%;
+                                                                                                                          padding-bottom: 10px;
+                                                                                                                          text-align: center;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .footer {
+                                                                                                                          display: grid;
+                                                                                                                          grid-template-columns: repeat(4, 1fr);
+                                                                                                                          grid-template-rows: 1fr;
+                                                                                                                          gap: 1px 1px;
+                                                                                                                          grid-template-areas: "footer-section1 footer-section2 footer-section3 footer-section4";
+                                                                                                                          grid-area: footer;
+                                                                                                                          background: var(--main-main-color);
+                                                                                                                          color: var(--main-secondary-color);
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .footer-section1 {
+                                                                                                                          grid-area: footer-section1;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .footer-section2 {
+                                                                                                                          grid-area: footer-section2;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .footer-section3 {
+                                                                                                                          grid-area: footer-section3;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .footer-section4 {
+                                                                                                                          grid-area: footer-section4;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .navigation {
+                                                                                                                          display: grid;
+                                                                                                                          grid-auto-flow: column;
+                                                                                                                          grid-gap: 10px;
+                                                                                                                          align-content: center;
+                                                                                                                          justify-content: center;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .navigation a {
+                                                                                                                          text-decoration: none;
+                                                                                                                          color: var(--main-secondary-color);
+                                                                                                                          font-size: 16px;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .logo {
+                                                                                                                          display: grid;
+                                                                                                                          grid-auto-flow: column;
+                                                                                                                          align-items: center;
+                                                                                                                          justify-content: center;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .logo h1 {
+                                                                                                                          text-decoration: none;
+                                                                                                                          color: var(--main-secondary-color);
+                                                                                                                          font-size: 26px;
+                                                                                                                          font-weight: lighter;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .footer-section1 {
+                                                                                                                          display: grid;
+                                                                                                                          justify-content: center;
+                                                                                                                          align-content: center;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .footer-section1 h2 {
+                                                                                                                          margin-bottom: 20px;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .navigation-footer a {
+                                                                                                                          text-decoration: none;
+                                                                                                                          color: var(--main-secondary-color);
+                                                                                                                          display: grid;
+                                                                                                                          padding-bottom: 7px;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .footer-section2 {
+                                                                                                                          display: grid;
+                                                                                                                          justify-content: center;
+                                                                                                                          align-content: center;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .footer-section2 h2 {
+                                                                                                                          margin-bottom: 20px;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .footer-section2>p {
+                                                                                                                          margin-bottom: 5px;
+                                                                                                                          padding-bottom: 10px;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .footer-section3 {
+                                                                                                                          display: grid;
+                                                                                                                          justify-content: center;
+                                                                                                                          align-content: center;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .footer-section3 h2 {
+                                                                                                                          margin-bottom: 20px;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .footer-section3>p {
+                                                                                                                          margin-bottom: 5px;
+                                                                                                                          padding-bottom: 10px;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .footer-section4 {
+                                                                                                                          display: grid;
+                                                                                                                          justify-content: center;
+                                                                                                                          align-content: center;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .footer-section4 h2 {
+                                                                                                                          margin-bottom: 20px;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .footer-section4>p {
+                                                                                                                          margin-bottom: 5px;
+                                                                                                                          padding-bottom: 10px;
+                                                                                                                      }
+                                                                                                                      /* LARGE SCREENS */
+                                                                                                                      
+                                                                                                                      @media(max-width:920px) {
+                                                                                                                          nav .menu-btn i {
+                                                                                                                              display: grid;
+                                                                                                                          }
+                                                                                                                          nav img {
+                                                                                                                              width: 100%;
+                                                                                                                              position: sticky;
+                                                                                                                              top: 14px;
+                                                                                                                              left: 0;
+                                                                                                                          }
+                                                                                                                          nav ul {
+                                                                                                                              position: absolute;
+                                                                                                                              top: 50px;
+                                                                                                                              left: -100%;
+                                                                                                                              background: #131e3a;
+                                                                                                                              height: 100vh;
+                                                                                                                              width: 100%;
+                                                                                                                              text-align: center;
+                                                                                                                              display: grid;
+                                                                                                                              grid-template-columns: 1fr;
+                                                                                                                              grid-column: 1/4;
+                                                                                                                          }
+                                                                                                                          #click:checked~ul {
+                                                                                                                              left: 0;
+                                                                                                                          }
+                                                                                                                          nav ul li {
+                                                                                                                              width: 100%;
+                                                                                                                              margin: 20px 0;
+                                                                                                                          }
+                                                                                                                          #click:checked~ul li a {
+                                                                                                                              margin-left: 0px;
+                                                                                                                          }
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      @media(min-width:768px) {
+                                                                                                                          .wrapper {
+                                                                                                                              display: grid;
+                                                                                                                              grid-template-columns: 1fr 2fr;
+                                                                                                                          }
+                                                                                                                          .wrapper>* {
+                                                                                                                              padding: 1em;
+                                                                                                                          }
+                                                                                                                          .company-info h3,
+                                                                                                                          .company-info ul,
+                                                                                                                          .brand {
+                                                                                                                              text-align: left;
+                                                                                                                          }
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      @media(max-width:668px) {
+                                                                                                                          .footer {
+                                                                                                                              font-size: smaller;
+                                                                                                                          }
+                                                                                                                      }
