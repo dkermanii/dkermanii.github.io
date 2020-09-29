@@ -75,6 +75,7 @@ img {
   margin-bottom: 0;
   color: var(--main-white-color);
   align-content: flex-start;
+  text-shadow: 2px 2px #e1ad21;
 }
 
 .landing p {
@@ -87,7 +88,10 @@ img {
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-
+.card1 a:hover {
+  background: var(--main-secondary-color);
+  color: var(--main-main-color);
+}
 .card1,
 .card2,
 .card3,
@@ -126,7 +130,7 @@ img {
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 400px) {
   .landing-container {
     grid-template-areas:
       "landing"
