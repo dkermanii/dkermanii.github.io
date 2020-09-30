@@ -43,6 +43,7 @@ nav ul li a {
     position: relative;
     font-size: 18px;
     text-decoration: none;
+    text-transform: lowercase;
 }
 
 nav .menu-btn i {
@@ -265,7 +266,21 @@ ul {
     padding-bottom: 10px;
 }
 
-@media screen and (max-width: 1199px) {
+
+/*@media screen and (max-width: 1199px) {
+    .footer {
+        text-align: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "footer-section1 footer-section2" "footer-section3 footer-section4";
+    }
+}
+*/
+
+
+/* tab */
+
+@media only screen and (max-width: 1160px) and (min-width: 768px) {
     .footer {
         text-align: center;
         grid-template-columns: repeat(2, 1fr);
@@ -274,10 +289,7 @@ ul {
     }
 }
 
-
-/* tab */
-
-@media(max-width:920px) {
+@media screen and (max-width:920px) {
     nav .menu-btn i {
         display: grid;
     }
